@@ -1,0 +1,1541 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(15, 60, 96);
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 4vw 0 4vw;
+    margin: 0 auto;
+}
+
+header, main, footer, .section {
+    width: 100%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__title {
+    text-align: center;
+    font-weight: 300;
+}
+
+.section__title:after {
+    display: block;
+    content: "";
+    background-color: rgb(0, 173, 239);
+    margin: 0 auto;
+}
+
+.paragraph {
+    text-align: center;
+}
+
+.paragraph--navy-blue {
+    color: rgb(15, 60, 96);
+}
+
+.paragraph--black {
+    color: rgb(56, 56, 56);
+}
+
+.paragraph--white {
+    color: rgb(255, 255, 255);
+}
+
+.reference__paragraph {
+    font-style: italic;
+}
+
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar__menu-icon {
+    display: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+
+.top-bar__menu-icon div {
+    background-color: white;
+}
+
+.navigation {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.navigation-list {
+    list-style-type: none
+}
+
+.slider-content__item2 {
+    display: block;
+    position: relative;
+}
+
+.slider-content__item2:before {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 173, 239);
+}
+
+.four-columns {
+    margin: 15px 0 15px 0;
+    display: flex;
+}
+
+.four-columns__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.four-columns__title {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.four-columns__title:after {
+    display: block;
+    content: "";
+    margin: 0 auto;
+    background-color: rgb(15, 60, 96);
+}
+
+.button {
+    text-transform: uppercase;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+}
+
+.button--darker {
+    color: rgb(15, 60, 96);
+    border: 2px rgb(15, 60, 96) solid;
+}
+
+.button--darker:hover {
+    background-color: rgb(15, 60, 96);
+    color: rgb(255, 255, 255);
+}
+
+.button--lighter {
+    color: rgb(255, 255, 255);
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+.button--lighter:hover {
+    background-color: rgb(15, 60, 96);
+}
+
+.button--small {
+    margin: 20px 0 50px;
+    width: 165px;
+}
+
+.reference {
+    background-color: rgb(15, 60, 96);
+    color: white;
+}
+
+.reference__author {
+    text-align: center;
+}
+
+.reference__quotation {
+    border: 2px rgb(38, 79, 111) solid;
+}
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px 0;
+}
+
+.tiles__item {
+    background: rgb(15, 60, 96);
+    position: relative;
+}
+
+.tiles__item:after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: rgb(0, 173, 239);
+    width: 30px;
+    height: 2px;
+    bottom: 25px;
+    left: 20px;
+}
+
+.offer {
+    padding-top: 30px;
+    border-bottom: 2px rgb(15, 60, 96) solid;
+}
+
+.tiles__title {
+    color: white;
+    font-weight: 300;
+    padding: 35px 20px;
+}
+
+.buisness-partners {
+    background: rgb(15,60,96);
+    color: white;
+    padding-top: 30px;
+}
+
+.buisness-partners__logos {
+    display: flex;
+    width: 100%;
+}
+
+.buisness-partners__icon-rolex {
+    background: url("../assets/rolex.png") no-repeat;
+    background-size: contain;
+    height: 53px;
+    width: 105px;
+}
+
+.buisness-partners__icon-omega {
+    background: url("../assets/omega.png") no-repeat;
+    background-size: contain;
+    height: 55px;
+    width: 105px;
+}
+
+.contact {
+    font-weight: 600;
+}
+
+.contact__container {
+    display: flex;
+    max-width: 1400px;
+}
+
+.contact__adress  {
+    width: 50%;
+    padding: 30px 4vw 50px 4vw;
+}
+
+.contact__form {
+    width: 50%;
+    background: rgb(237, 243, 245);
+    padding: 30px 4vw 0 4vw;
+}
+
+.adress__telephone {
+    text-align: center;
+}
+
+.adress__court-paragraph {
+    font-family: Verdana,Geneva,sans-serif;
+    font-weight: 300;
+}
+
+.adress__court-numbers span {
+    font-family: Verdana,Geneva,sans-serif;
+    margin: 0 10px;
+    font-weight: 300;
+}
+
+.adress__court-numbers {
+    display: flex;
+    justify-content: center;
+}
+
+.adress__court-paragraph {
+    font-family: Verdana,Geneva,sans-serif;
+}
+
+.form__blank {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+label[for=case], label[for=message] {
+    width: 100%;
+}
+
+.form__textarea, .form__input {
+    border: 0;
+    border-bottom: 2px solid rgb(15,60,96);
+    width: 100%;
+    resize: none;
+    background: none;
+    margin-bottom: 15px;
+}
+
+.blank__labels {
+    margin-top: 35px;
+    display: flex;
+    width: 100%;
+}
+
+label[for=phone]{
+    margin: 0 25px;
+}
+
+.map {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    padding-top: 50px;
+    background: rgb(15,60,96);
+    color: white;
+}
+
+.footer__section {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.footer__logo {
+    width: 176px;
+    height: 90px;
+    background: url("../assets/logo_footer.png") no-repeat;
+    background-size: contain;
+}
+
+.footer__navigation, .footer__partners, .footer__logo {
+    width: 25%;
+    margin-right: 60px;
+}
+
+.footer__title {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.footer__title:after {
+    display: block;
+    content: "";
+    background-color: rgb(0, 173, 239);
+    width: 42px;
+    height: 2px;
+    margin-top: 10px;
+}
+
+.footer__list {
+    list-style-type: none;
+}
+
+.footer__list-item {
+    margin-top: 10px;
+}
+
+.footer__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.footer__social {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__social-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.footer__social-logo {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 9px;
+}
+
+.footer__social-name {
+    margin-left: 15px;
+}
+
+.footer__copyrights-paragraph {
+    display: inline-block;
+    margin: 20px;
+    font-size: 12px;
+}
+
+.footer__copyrights {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 767px) {
+
+    .button {
+        height: 35px;
+        padding: 5px;
+    }
+
+    .section__title:after {
+        width: 35px;
+        height: 2px;
+        margin-top: 8px;
+    }
+
+    .section__paragraph {
+        margin-top: 20px;
+    }
+
+    header {
+        background: url("../assets/verist_mobile.png") no-repeat;
+        background-size: contain;
+    }
+
+    .top-bar {
+        height: 48px;
+        width: 100%;
+        align-items: center;
+        background-color: rgb(15, 60, 96);
+        position: relative;
+    }
+
+    .top-bar__menu-icon {
+        display: block;
+    }
+
+    .top-bar__logo {
+        margin: 0 auto;
+        background: url("../assets/logo_mobile.png") no-repeat;
+        background-size: contain;
+    }
+
+    .navigation {
+        display: none;
+        width: 100%;
+        font-weight: bold;
+        font-size: 14px;
+        background: #f1f1f1;
+        position: absolute;
+        top: 45px;
+    }
+
+    .navigation-item {
+        display: block;
+        padding: 10px 0 10px 0;
+        border-bottom: #dddddd 1px solid;
+    }
+
+    .navigation-item {
+        background: #ffffff;
+    }
+
+    .navigation-link {
+        font-size: 12px;
+        text-decoration: none;
+        color: rgb(15, 60, 96);
+    }
+
+    /* sekcja O nas */
+    .about-us {
+        margin-top: 10px;
+    }
+
+    .four-columns__paragraph {
+        width: 80%;
+        margin: 15px 0 10px 0;
+    }
+
+    .button--medium {
+        margin: 40px auto 20px auto;
+    }
+
+    /* sekcja zespół */
+    .team {
+        margin-top: 30px;
+        padding-top: 15px;
+        height: 350px;
+        background: url("../assets/team3.png") no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .team__button {
+        position: absolute;
+        bottom: 40px;
+    }
+
+    /* sekcja referencje */
+    .reference {
+        padding-top: 25px;
+    }
+
+    .reference__quotation {
+        border: 2px rgb(38, 79, 111) solid;
+        padding: 15px 30px;
+    }
+
+    /* sekcja oferta */
+    .tiles__item {
+        margin: 2% 5%;
+        width: 40%;
+    }
+
+    /* sekcja partnerzy*/
+    .buisness-partners__logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* sekcja partnerzy*/
+    [class^="buisness-partners__icon"] {
+        margin: 50px 5%;
+    }
+
+    /* sekcja kontakt*/
+    .contact__container {
+        display: block;
+    }
+
+    .contact__adress, .contact__form {
+        width: 100%;
+    }
+
+    .adress__telephone {
+        margin: 20px 0 -15px 0;
+    }
+
+    .adress__telephone-number {
+        font-size: 36px;
+    }
+
+    .adress__court-paragraph {
+        font-family: Verdana,Geneva,sans-serif;
+        font-size: 12px;
+        margin: 50px 0 20px 0;
+    }
+
+    .adress__court-numbers span {
+        font-size: 12px;
+    }
+
+    label[for=phone]{
+        margin: 0 18px;
+    }
+
+    /* sekcja footer */
+
+    .footer__section {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        padding-bottom: 0;
+    }
+
+    .footer__logo {
+        margin: 20px auto;
+        width: 176px;
+    }
+
+    .footer__navigation, .footer__partners, .footer__social {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .footer__social {
+        align-items: center;
+    }
+
+    .footer__title, .footer__list-item {
+        text-align: center;
+    }
+
+    .footer__title:after {
+        margin: 10px auto;
+    }
+
+    .footer__copyrights {
+        text-align: center;
+        margin: 20px;
+        position: static;
+    }
+
+    .footer__copyrights-paragraph {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+
+
+    @media (max-width: 399px) {
+
+        header, main, footer, .section {
+            min-width: 320px;
+        }
+
+        .section__title {
+            font-size: 26px;
+        }
+
+        .section__paragraph {
+            font-size: 12px;
+        }
+
+        header {
+            height: 240px;
+            background-position-y: 45px;
+        }
+
+        .top-bar__logo {
+            width: 140px;
+            height: 29px;
+        }
+
+        .top-bar__menu-icon {
+            padding: 11px 15px 0 15px;
+        }
+
+        .top-bar__menu-icon div {
+            width: 27px;
+            height: 2px;
+            margin: 5px 0;
+        }
+
+        .slider-content {
+            width: 150px;
+            margin-top: 10px;
+        }
+
+        .slider-content__item1 {
+            font-size: 18px;
+        }
+
+        .slider-content__item2 {
+            font-size: 29px;
+            line-height: 26px;
+            margin-left: 34px;
+        }
+
+        .slider-content__item2:before {
+            width: 26px;
+            height: 2px;
+            margin: 15px 0 0 -34px;
+        }
+
+        .slider-content__item3 {
+            display: inline-block;
+            font-size: 10px;
+            line-height: 25px;
+        }
+
+        .button--large {
+            width: 155px;
+            font-size: 11px;
+        }
+
+        /*sekcja O NAS */
+        .four-columns {
+            flex-direction: column;
+        }
+
+        .four-columns__arrow-icon {
+            transform: scale(0.6)
+        }
+
+        .four-columns__title {
+            font-size: 14px;
+        }
+
+        .four-columns__title:after {
+            width: 26px;
+            height: 2px;
+            margin-top: 7px;
+        }
+
+        .four-columns__paragraph {
+            font-size: 10px;
+        }
+
+        .button--medium {
+            width: 140px;
+            font-size: 11px;
+        }
+
+        /*sekcja zespol*/
+        .team {
+            background-position: center;
+        }
+
+        /* sekcja referencje*/
+        .reference__paragraph {
+            font-size: 8px;
+            margin-bottom: 10px;
+            line-height: 12px;
+        }
+
+        .reference__author {
+            font-size: 9px;
+        }
+
+        .reference__quotation {
+            margin: 15px 0;
+        }
+
+        /* sekcja oferta */
+        .tiles__item {
+            height: 130px;
+        }
+
+        .tiles__title {
+            font-size: 10px;
+            padding: 25px 20px;
+        }
+
+        /* sekcja kontakt */
+
+        label {
+            font-size: 13px;
+        }
+
+        /* sekcja footer */
+        .footer__title {
+            font-size: 16px;
+        }
+
+        .footer__list-item {
+            font-size: 14px;
+        }
+    }
+
+    @media (min-width: 400px) and (max-width: 499px) {
+
+        .section__title {
+            font-size: 30px;
+        }
+
+        .section__paragraph {
+            font-size: 14px;
+        }
+
+        header {
+            height: 269px;
+            background-position-y: 42px;
+        }
+
+        .top-bar__logo {
+            width: 140px;
+            height: 29px;
+        }
+
+        .top-bar__menu-icon {
+            padding: 11px 15px 0 15px;
+        }
+
+        .top-bar__menu-icon div {
+            width: 27px;
+            height: 2px;
+            margin: 5px 0;
+        }
+
+        .slider-content {
+            width: 175px;
+            margin-top: 11px;
+        }
+
+        .slider-content__item1 {
+            font-size: 24px;
+        }
+
+        .slider-content__item2 {
+            font-size: 35px;
+            line-height: 30px;
+            margin-left: 40px;
+        }
+
+        .slider-content__item2:before {
+            width: 32px;
+            height: 2px;
+            margin: 14px 0 0 -40px;
+        }
+
+        .slider-content__item3 {
+            display: inline-block;
+            font-size: 12px;
+            line-height: 30px;
+            margin-bottom: 5px;
+        }
+
+        .button--large {
+            width: 170px;
+            font-size: 12px;
+        }
+
+        /*sekcja O NAS */
+        .four-columns {
+            flex-direction: column;
+        }
+
+        .four-columns__arrow-icon {
+            transform: scale(0.7)
+        }
+
+        .four-columns__title {
+            font-size: 16px;
+        }
+
+        .four-columns__title:after {
+            width: 30px;
+            height: 2px;
+            margin-top: 8px;
+        }
+
+        .four-columns__paragraph {
+            font-size: 12px;
+        }
+
+        .button--medium {
+            width: 150px;
+            font-size: 12px;
+        }
+
+        /*sekcja zespol*/
+        .team {
+            background-position: bottom;
+        }
+
+        /* sekcja referencje*/
+        .reference__paragraph {
+            font-size: 10px;
+            margin-bottom: 15px;
+            line-height: 14px;
+        }
+
+        .reference__author {
+            font-size: 11px;
+        }
+
+        .reference__quotation {
+            margin: 20px 0;
+        }
+
+        /* sekcja oferta */
+        .tiles__item {
+            height: 160px;
+        }
+
+        .tiles__title {
+            font-size: 13px;
+        }
+
+        /* sekcja kontakt */
+        label {
+            font-size: 14px;
+        }
+
+        /* sekcja footer */
+        .footer__title {
+            font-size: 16px;
+        }
+
+        .footer__list-item {
+            font-size: 14px;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width: 767px) {
+
+        .section__title {
+            font-size: 34px;
+        }
+
+        .section__title:after {
+            margin-top: 10px;
+        }
+
+        .section__paragraph {
+            font-size: 16px;
+            margin-top: 25px;
+        }
+
+        header {
+            height: 360px;
+            background-position: center;
+            background-size: cover;
+            background-position-y: 10px;
+        }
+
+        .top-bar {
+            height: 55px;
+        }
+
+        .top-bar__logo {
+            width: 150px;
+            height: 35px;
+        }
+
+        .top-bar__menu-icon {
+            padding: 10px 15px 0 15px;
+        }
+
+        .top-bar__menu-icon div {
+            width: 35px;
+            height: 4px;
+            margin: 6px 0;
+        }
+
+        .slider-content {
+            width: 240px;
+            margin-top: 25px;
+        }
+
+        .slider-content__item1 {
+            font-size: 35px;
+        }
+
+        .slider-content__item2 {
+            font-size: 55px;
+            line-height: 45px;
+            margin-left: 65px;
+        }
+
+        .slider-content__item2:before {
+            width: 50px;
+            height: 2px;
+            margin: 27px 0 0 -64px;
+        }
+
+        .slider-content__item3 {
+            display: inline-block;
+            font-size: 16px;
+            line-height: 40px;
+            margin-bottom: 5px;
+        }
+
+        .button--large {
+            width: 180px;
+            font-size: 13px;
+        }
+
+        /*sekcja O NAS */
+        .about-us {
+            padding-top: 20px;
+        }
+
+        .four-columns {
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .four-columns__item {
+            margin-top: 20px;
+            width: 50%;
+        }
+
+        .four-columns__arrow-icon {
+            transform: scale(0.80);
+            margin-bottom: 5px;
+        }
+
+        .four-columns__title {
+            font-size: 16px;
+        }
+
+        .four-columns__title:after {
+            width: 30px;
+            height: 2px;
+            margin-top: 10px;
+        }
+
+        .four-columns__paragraph {
+            font-size: 12px;
+        }
+
+        .button--medium {
+            width: 160px;
+            font-size: 13px;
+        }
+
+        /*sekcja zespol*/
+        .team {
+            background-position: bottom;
+            height: 475px;
+            padding-top: 20px;
+        }
+
+
+        /* sekcja referencje*/
+        .reference__paragraph {
+            font-size: 12px;
+            margin-bottom: 15px;
+            line-height: 20px;
+        }
+
+        .reference__author {
+            font-size: 14px;
+        }
+
+        .reference__quotation {
+            margin: 25px 0;
+        }
+
+        /* sekcja oferta */
+        .tiles__item {
+            height: 220px;
+        }
+
+        .tiles__title {
+            font-size: 16px;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .button {
+        height: 50px;
+        padding: 6px;
+    }
+
+    .section__title:after {
+        width: 50px;
+        height: 2px;
+        margin-top: 12px;
+    }
+
+    .section__paragraph {
+        margin-top: 30px;
+    }
+
+    header {
+        background: url("../assets/verist.png") no-repeat;
+        background-size: cover;
+    }
+
+    .top-bar__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top-bar__logo {
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+    }
+
+    .navigation {
+        margin: auto 0;
+    }
+
+    .navigation__list {
+        list-style-type: none;
+        display: flex;
+        text-transform: uppercase;
+    }
+
+    .navigation__item {
+        display: inline-block;
+    }
+
+    .navigation__link {
+        text-decoration: none;
+        color: rgb(15, 60, 96);
+        cursor: pointer;
+    }
+
+    .navigation__link:hover {
+        border-bottom: 2px rgb(0, 173, 239) solid;
+        width: 100%;
+    }
+
+    /* sekcja O nas */
+    .about-us {
+        margin-top: 10px;
+        padding-top: 25px;
+    }
+
+    .four-columns {
+        flex-wrap: wrap;
+        margin-top: 35px;
+    }
+
+    .four-columns__item {
+        margin-top: 22px;
+        width: 25%;
+    }
+
+    .four-columns__arrow-icon {
+        margin-bottom: 5px;
+    }
+
+    .four-columns__title {
+        margin-top: 15px;
+    }
+
+    .four-columns__paragraph {
+        width: 80%;
+        margin: 15px 0 10px 0;
+    }
+
+    .button--medium {
+        margin: 40px auto 20px auto;
+    }
+
+    /* sekcja zespół */
+    .team {
+        margin-top: 30px;
+        padding-top: 20px;
+        background: url("../assets/team.png") no-repeat center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .team__button {
+        position: absolute;
+        bottom: 40px;
+    }
+
+    /* sekcja referencje */
+    .reference {
+        padding-top: 30px;
+    }
+
+    .reference__quotation {
+        border: 2px rgb(38, 79, 111) solid;
+        padding: 25px 50px;
+    }
+
+    /* sekcja oferta */
+    .tiles__item {
+        margin: 1%;
+        width: 18%;
+    }
+
+    /* sekcja kontakt*/
+    .adress__telephone {
+        margin: 30px 0 -30px 0;
+    }
+
+    .adress__telephone-number {
+        font-size: 46px;
+    }
+
+    .adress__court-paragraph {
+        font-size: 16px;
+        margin: 70px 0 20px 0;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+
+        .section__title {
+            font-size: 40px;
+        }
+
+        .section__paragraph {
+            font-size: 19px;
+            margin-top: 30px;
+        }
+
+        header {
+            height: 500px;
+            background-position: bottom;
+        }
+
+        .top-bar {
+            height: 100px;
+        }
+
+        .top-bar__logo {
+            width: 23vw;
+            height: 6vh;
+            background-image: url("../assets/logo_mobile_landscape.png");
+        }
+
+        .navigation__link {
+            font-size: 14px;
+            padding: 0 0.5vw 8px 1.5vw;
+        }
+
+        .slider-content {
+            width: 360px;
+            margin-top: 30px;
+        }
+
+        .slider-content__item1 {
+            font-size: 50px;
+        }
+
+        .slider-content__item2 {
+            font-size: 80px;
+            line-height: 64px;
+            margin-left: 100px;
+        }
+
+        .slider-content__item2:before {
+            width: 80px;
+            height: 2px;
+            margin: 38px 0 0 -99px;
+        }
+
+        .slider-content__item3 {
+            display: inline-block;
+            font-size: 23px;
+            line-height: 45px;
+            margin-bottom: 15px;
+        }
+
+        .button--large {
+            width: 210px;
+            font-size: 14px;
+        }
+
+        /*sekcja O NAS */
+        .four-columns__arrow-icon {
+            transform: scale(0.85);
+        }
+
+        .four-columns__title {
+            font-size: 16px;
+        }
+
+        .four-columns__title:after {
+            width: 30px;
+            height: 2px;
+            margin-top: 10px;
+        }
+
+        .four-columns__paragraph {
+            font-size: 12px;
+        }
+
+        .button--medium {
+            width: 185px;
+            font-size: 14px;
+        }
+
+        /*sekcja zespol*/
+        .team {
+            height: 600px;
+        }
+
+
+        /* sekcja referencje*/
+        .reference__paragraph {
+            font-size: 12px;
+            margin-bottom: 15px;
+            line-height: 20px;
+        }
+
+        .reference__author {
+            font-size: 14px;
+        }
+
+        .reference__quotation {
+            margin: 30px 0;
+        }
+
+        /* sekcja oferta */
+        .tiles__item {
+            height: 150px;
+        }
+
+        .tiles__title {
+            font-size: 12px;
+        }
+
+        /* sekcja partnerzy*/
+        .buisness-partners__logos {
+            flex-wrap: wrap;
+        }
+
+        /* sekcja partnerzy*/
+        [class^="buisness-partners__icon"] {
+            margin: 50px 8%;
+        }
+
+        /* sekcja kontakt*/
+        label[for=phone]{
+            margin: 0 15px;
+        }
+
+
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+        .section__title {
+            font-size: 44px;
+        }
+
+        .section__paragraph {
+            font-size: 19px;
+        }
+
+        header {
+            height: 600px;
+            background-position: top;
+        }
+
+        .top-bar {
+            height: 130px;
+        }
+
+        .top-bar__logo {
+            width: 200px;
+            height: 90px;
+            background-image: url("../assets/logo.png");
+        }
+
+        .navigation__list {
+            height: 50px;
+        }
+
+        .navigation__link {
+            font-size: 16px;
+            padding: 0 1.75vw 8px 1.75vw;
+        }
+
+        .slider-content {
+            width: 415px;
+            margin-top: 35px;
+        }
+
+        .slider-content__item1 {
+            font-size: 62px;
+        }
+
+        .slider-content__item2 {
+            font-size: 100px;
+            line-height: 80px;
+            margin-left: 120px;
+        }
+
+        .slider-content__item2:before {
+            width: 90px;
+            height: 2px;
+            margin: 46px 0 0 -119px;
+        }
+
+        .slider-content__item3 {
+            display: inline-block;
+            font-size: 28px;
+            line-height: 65px;
+            margin-bottom: 15px;
+        }
+
+        .button--large {
+            width: 215px;
+            font-size: 14px;
+        }
+
+        /*sekcja O NAS */
+        .four-columns__arrow-icon {
+            transform: scale(0.9);
+        }
+
+        .four-columns__title {
+            font-size: 18px;
+        }
+
+        .four-columns__title:after {
+            width: 32px;
+            height: 2px;
+            margin-top: 12px;
+        }
+
+        .four-columns__paragraph {
+            font-size: 14px;
+        }
+
+        .button--medium {
+            width: 200px;
+            font-size: 15px;
+        }
+
+        /*sekcja zespol*/
+        .team {
+            height: 700px;
+        }
+
+
+        /* sekcja referencje*/
+        .reference__paragraph {
+            font-size: 13px;
+            margin-bottom: 18px;
+            line-height: 23px;
+        }
+
+        .reference__author {
+            font-size: 15px;
+        }
+
+        .reference__quotation {
+            margin: 35px 0;
+        }
+
+        /* sekcja oferta */
+        .tiles__item {
+            height: 180px;
+        }
+
+        .tiles__title {
+            font-size: 14px;
+        }
+
+        /* sekcja partnerzy*/
+        [class^="buisness-partners__icon"] {
+            margin: 50px 2vw;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .section__title {
+            font-size: 48px;
+        }
+
+        .section__paragraph {
+            font-size: 21px;
+        }
+
+        header {
+            height: 800px;
+            background-position: center;
+        }
+
+        .top-bar {
+            height: 150px;
+        }
+
+        .top-bar__logo {
+            width: 200px;
+            height: 100px;
+            background-image: url("../assets/logo.png");
+        }
+
+        .navigation__list {
+            height: 50px;
+        }
+
+        .navigation__link {
+            font-size: 16px;
+            padding: 0 18px 10px 18px;
+            margin: 0 15px 0 15px;
+        }
+
+        .slider-content {
+            width: 500px;
+            margin-top: 50px;
+        }
+
+        .slider-content__item1 {
+            font-size: 78px;
+        }
+
+        .slider-content__item2 {
+            font-size: 122px;
+            line-height: 95px;
+            margin-left: 150px;
+        }
+
+        .slider-content__item2:before {
+            width: 110px;
+            height: 2px;
+            margin: 58px 0 0 -148px;
+        }
+
+        .slider-content__item3 {
+            display: inline-block;
+            font-size: 35px;
+            line-height: 70px;
+            margin-bottom: 35px;
+        }
+
+        .button--large {
+            width: 230px;
+            font-size: 14px;
+        }
+
+        /*sekcja O NAS */
+        .four-columns__title {
+            font-size: 21px;
+        }
+
+        .four-columns__title:after {
+            width: 35px;
+            height: 2px;
+            margin-top: 15px;
+        }
+
+        .four-columns__paragraph {
+            font-size: 17px;
+        }
+
+        .button--medium {
+            width: 220px;
+            font-size: 14px;
+        }
+
+        /*sekcja zespol*/
+        .team {
+            height: 850px;
+        }
+
+
+        /* sekcja referencje*/
+        .reference__paragraph {
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 26px;
+        }
+
+        .reference__author {
+            font-size: 16px;
+        }
+
+        .reference__quotation {
+            margin: 37px 0;
+        }
+
+        /* sekcja oferta */
+        .tiles__item {
+            height: 220px;
+        }
+
+        .tiles__title {
+            margin-top: 50px;
+            font-size: 16px;
+        }
+
+        /* sekcja partnerzy*/
+        [class^="buisness-partners__icon"] {
+            margin: 50px 35px;
+        }
+    }
+}
