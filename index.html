@@ -6,11 +6,11 @@
     <title>Verist</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="./js/app.js"></script>
+
 </head>
 <body>
 
-<header>
+<header class="header">
     <div class="top-bar">
         <div class="top-bar__container container">
             <div class="top-bar__logo"></div>
@@ -21,12 +21,12 @@
             </div>
             <nav class="navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link">o nas</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">zespół</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">oferta</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">biznes partnerzy</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">referencje</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">kontakt</a></li>
+                    <li class="navigation__item"><a href="#about-us" class="navigation__link">o nas</a></li>
+                    <li class="navigation__item"><a href="#team" class="navigation__link">zespół</a></li>
+                    <li class="navigation__item"><a href="#offer" class="navigation__link">oferta</a></li>
+                    <li class="navigation__item"><a href="#buisness-partners" class="navigation__link">biznes partnerzy</a></li>
+                    <li class="navigation__item"><a href="#reference" class="navigation__link">referencje</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link">kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,8 +42,8 @@
     </div>
 </header>
 
-<main>
-    <section class="section about-us">
+<main class="main">
+    <section class="section about-us" id="about-us">
         <div class="container">
             <h2 class="section__title">O nas</h2>
             <p class="section__paragraph paragraph paragraph--navy-blue">Jesteśmy kancelarią radców prawnych, którzy od
@@ -99,7 +99,7 @@
         </div>
     </section>
 
-    <section class="section team">
+    <section class="section team" id="team">
         <div class="container">
             <h2 class="section__title">Zespół</h2>
             <p class="section__paragraph paragraph paragraph--navy-blue">Jesteśmy kancelarią radców prawnych, którzy od
@@ -109,7 +109,7 @@
         <button class="team__button button button--medium button--lighter">zobacz więcej</button>
     </section>
 
-    <section class="section reference">
+    <section class="section reference" id="reference">
         <div class="container">
             <h2 class="section__title">Referencje</h2>
             <div class="reference__quotation">
@@ -123,7 +123,7 @@
         </div>
     </section>
 
-    <section class="section offer">
+    <section class="section offer" id="offer">
         <div class="container">
             <h2 class="section__title">Oferta</h2>
             <p class="section__paragraph paragraph paragraph--navy-blue">Jesteśmy kancelarią radców prawnych, którzy od
@@ -165,7 +165,7 @@
         </div>
     </section>
 
-    <section class="section buisness-partners">
+    <section class="section buisness-partners" id="buisness-partners">
         <div class="container">
             <h2 class="section__title">Biznes partnerzy</h2>
             <div class="buisness-partners__logos">
@@ -179,7 +179,7 @@
         </div>
     </section>
 
-    <section class="section contact">
+    <section class="section contact" id="contact">
         <div class="contact__container">
             <div class="contact__adress adress">
                 <h2 class="section__title">Vertis</h2>
@@ -214,26 +214,26 @@
                     Zapraszamy do kontaktu, chętnie odpowiemy<br> na wszystkie pytania.
                 </p>
 
-                <form class="form__blank">
+                <form class="form__blank blank">
                     <div class="blank__labels">
-                        <label for="name">imię i nazwisko
+                        <label>imię i nazwisko
                             <input class="form__input" type="text" id="name" name="name">
                         </label>
 
-                        <label for="phone">telefon
+                        <label class="blank__label-phone">telefon
                             <input class="form__input" type="tel" id="phone" name="phone">
                         </label>
 
-                        <label for="e-mail">e-mail
+                        <label>e-mail
                             <input class="form__input" type="email" id="e-mail" name="e-mail">
                         </label>
                     </div>
 
-                        <label for="case">dotyczy
+                        <label class="blank__label-width">dotyczy
                             <input class="form__input" type="text" id="case" name="case">
                         </label>
 
-                    <label for="message">wpisz swoją wiadomość
+                    <label class="blank__label-width">wpisz swoją wiadomość
                         <textarea class="form__textarea" rows="4" cols="30" id="message" name="message"></textarea>
                     </label>
 
@@ -243,13 +243,13 @@
         </div>
     </section>
 
-    <section class="section map">
+    <section class="section map" id="map">
         <img class="map" src="assets/mapa.png" alt="">
     </section>
 
 </main>
 
-<footer>
+<footer class="footer">
     <div class="container">
         <div class="footer__section">
         <div class="footer__logo">
@@ -292,6 +292,7 @@
     </div>
 </footer>
 
+<script type="text/javascript" src="./js/app.js"></script>
 </body>
 </html>
 

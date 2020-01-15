@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?6e6a78');
+  src:  url('fonts/icomoon.eot?6e6a78#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6e6a78') format('truetype'),
+    url('fonts/icomoon.woff?6e6a78') format('woff'),
+    url('fonts/icomoon.svg?6e6a78#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon_32:before {
+  content: "\e900";
+}
+.icon-icon_33:before {
+  content: "\e901";
+}
+.icon-ikona_01:before {
+  content: "\e902";
+}
+.icon-ikona_02:before {
+  content: "\e903";
+}
+.icon-ikona_03:before {
+  content: "\e904";
+}
+.icon-ikona_04:before {
+  content: "\e905";
+}
+.icon-ikona_05:before {
+  content: "\e906";
+}
+.icon-ikona_06:before {
+  content: "\e907";
+}
+.icon-ikona_07:before {
+  content: "\e908";
+}
+.icon-ikona_08:before {
+  content: "\e909";
+}
+.icon-ikona_09:before {
+  content: "\e90a";
+}
+.icon-ikona_10:before {
+  content: "\e90b";
+}
+.icon-ikona_11:before {
+  content: "\e90c";
+}
+.icon-ikona_12:before {
+  content: "\e90d";
+}
+.icon-ikona_13:before {
+  content: "\e90e";
+}
+.icon-ikona_14:before {
+  content: "\e90f";
+}
+.icon-ikona_15:before {
+  content: "\e910";
+}
+.icon-ikona_16:before {
+  content: "\e911";
+}
+.icon-ikona_17:before {
+  content: "\e912";
+}
+.icon-ikona_18:before {
+  content: "\e913";
+}
+.icon-ikona_19:before {
+  content: "\e914";
+}
+.icon-ikona_20:before {
+  content: "\e915";
+}
+.icon-ikona_21:before {
+  content: "\e916";
+}
+.icon-ikona_22:before {
+  content: "\e917";
+}
+.icon-ikona_23:before {
+  content: "\e918";
+}
+.icon-ikona_24:before {
+  content: "\e919";
+}
+.icon-ikona_25:before {
+  content: "\e91a";
+}
+.icon-ikona_26:before {
+  content: "\e91b";
+}
+.icon-ikona_27:before {
+  content: "\e91c";
+}
+.icon-ikona_28:before {
+  content: "\e91d";
+}
+.icon-ikona_29:before {
+  content: "\e91e";
+}
+.icon-ikona_30:before {
+  content: "\e91f";
+}
+.icon-ikona33:before {
+  content: "\e920";
+}

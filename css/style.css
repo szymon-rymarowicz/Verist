@@ -1,8 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
 body {
     color: rgb(15, 60, 96);
@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
 }
 
-header, main, footer, .section {
+.header, .footer, .main .section {
     width: 100%;
 }
 
@@ -50,7 +50,7 @@ header, main, footer, .section {
 }
 
 .paragraph--white {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
 }
 
 .reference__paragraph {
@@ -61,6 +61,10 @@ header, main, footer, .section {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    transition: 0.4s;
+    padding: 30px 0;
 }
 
 .top-bar__menu-icon {
@@ -72,6 +76,15 @@ header, main, footer, .section {
     cursor: pointer;
 }
 
+.top-bar--navigation-scroll {
+    background-color: rgb(15, 60, 96);
+    padding: 15px 0;
+    box-shadow: 0 1px 7px 0 rgba(32,33,36);
+}
+
+.top-bar--navigation-scroll .top-bar__logo {
+    background-image: url('../assets/logo_mobile.png') !important;
+}
 
 .top-bar__menu-icon div {
     background-color: white;
@@ -129,6 +142,7 @@ header, main, footer, .section {
     cursor: pointer;
     font-weight: bold;
     outline: none;
+    font-family: 'Playfair Display', serif;
 }
 
 .button--darker {
@@ -139,15 +153,18 @@ header, main, footer, .section {
 .button--darker:hover {
     background-color: rgb(15, 60, 96);
     color: rgb(255, 255, 255);
+    transition: 0.3s;
 }
 
 .button--lighter {
     color: rgb(255, 255, 255);
     border: 2px rgb(255, 255, 255) solid;
+
 }
 
 .button--lighter:hover {
     background-color: rgb(15, 60, 96);
+    transition: 0.3s;
 }
 
 .button--small {
@@ -166,10 +183,25 @@ header, main, footer, .section {
 
 .reference__quotation {
     border: 2px rgb(38, 79, 111) solid;
+    position: relative;
+}
+
+.reference__quotation::before {
+    content: "";
+    display: block;
+    background: url("../assets/quote.png") no-repeat;
+    width: 81px;
+    height: 48px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 85%;
+    background-size: contain;
 }
 
 .tiles {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 35px 0;
 }
@@ -179,7 +211,17 @@ header, main, footer, .section {
     position: relative;
 }
 
-.tiles__item:after {
+.tiles__item:hover {
+    background: white;
+    border: 2px solid rgb(15, 60, 96);
+    transition: 0.6s;
+}
+
+.tiles__item:hover .tiles__title {
+    color: rgb(15, 60, 96);
+}
+
+.tiles__item::after {
     position: absolute;
     display: block;
     content: "";
@@ -232,7 +274,6 @@ header, main, footer, .section {
 
 .contact__container {
     display: flex;
-    max-width: 1400px;
 }
 
 .contact__adress  {
@@ -276,7 +317,7 @@ header, main, footer, .section {
     flex-direction: column;
 }
 
-label[for=case], label[for=message] {
+.blank__label-width {
     width: 100%;
 }
 
@@ -295,7 +336,7 @@ label[for=case], label[for=message] {
     width: 100%;
 }
 
-label[for=phone]{
+.blank__label-phone {
     margin: 0 25px;
 }
 
@@ -304,7 +345,7 @@ label[for=phone]{
     height: auto;
 }
 
-footer {
+.footer {
     padding-top: 50px;
     background: rgb(15,60,96);
     color: white;
@@ -355,6 +396,10 @@ footer {
     text-decoration: none;
     cursor: pointer;
     color: white;
+}
+
+.footer__link:hover {
+    color: rgb(0, 173, 239);
 }
 
 .footer__social {
@@ -412,7 +457,7 @@ footer {
         margin-top: 20px;
     }
 
-    header {
+    .header {
         background: url("../assets/verist_mobile.png") no-repeat;
         background-size: contain;
     }
@@ -422,7 +467,6 @@ footer {
         width: 100%;
         align-items: center;
         background-color: rgb(15, 60, 96);
-        position: relative;
     }
 
     .top-bar__menu-icon {
@@ -478,8 +522,8 @@ footer {
     /* sekcja zespół */
     .team {
         margin-top: 30px;
-        padding-top: 15px;
-        height: 350px;
+        padding-top: 35px;
+        height: 365px;
         background: url("../assets/team3.png") no-repeat;
         background-size: cover;
         position: relative;
@@ -487,7 +531,7 @@ footer {
 
     .team__button {
         position: absolute;
-        bottom: 40px;
+        bottom: 17px;
     }
 
     /* sekcja referencje */
@@ -497,13 +541,28 @@ footer {
 
     .reference__quotation {
         border: 2px rgb(38, 79, 111) solid;
-        padding: 15px 30px;
+        padding: 20px 30px;
+        margin: 40px 0;
+    }
+
+    .reference__quotation::before {
+        width: 61px;
+        height: 36px;
+        bottom: 89%;
     }
 
     /* sekcja oferta */
     .tiles__item {
-        margin: 2% 5%;
+        margin: 2%;
         width: 40%;
+    }
+
+    .tiles__title {
+        line-height: 18px;
+    }
+
+    .tiles__item::after {
+        bottom: 20px;
     }
 
     /* sekcja partnerzy*/
@@ -595,7 +654,7 @@ footer {
 
     @media (max-width: 399px) {
 
-        header, main, footer, .section {
+        .header, .main, .footer, .section {
             min-width: 320px;
         }
 
@@ -610,6 +669,10 @@ footer {
         header {
             height: 240px;
             background-position-y: 45px;
+        }
+
+        .top-bar {
+            padding: 0;
         }
 
         .top-bar__logo {
@@ -629,7 +692,7 @@ footer {
 
         .slider-content {
             width: 150px;
-            margin-top: 10px;
+            padding-top: 55px;
         }
 
         .slider-content__item1 {
@@ -715,6 +778,11 @@ footer {
         .tiles__title {
             font-size: 10px;
             padding: 25px 20px;
+            line-height: 15px;
+        }
+
+        .tiles__item::after {
+            bottom: 20px;
         }
 
         /* sekcja kontakt */
@@ -743,14 +811,18 @@ footer {
             font-size: 14px;
         }
 
-        header {
+        .header {
             height: 269px;
             background-position-y: 42px;
         }
 
+        .top-bar {
+            padding: 0;
+        }
+
         .top-bar__logo {
             width: 140px;
-            height: 29px;
+            height: 35px;
         }
 
         .top-bar__menu-icon {
@@ -765,7 +837,7 @@ footer {
 
         .slider-content {
             width: 175px;
-            margin-top: 11px;
+            padding-top: 60px;
         }
 
         .slider-content__item1 {
@@ -840,10 +912,6 @@ footer {
             font-size: 11px;
         }
 
-        .reference__quotation {
-            margin: 20px 0;
-        }
-
         /* sekcja oferta */
         .tiles__item {
             height: 160px;
@@ -883,7 +951,7 @@ footer {
             margin-top: 25px;
         }
 
-        header {
+        .header {
             height: 360px;
             background-position: center;
             background-size: cover;
@@ -892,6 +960,7 @@ footer {
 
         .top-bar {
             height: 55px;
+            padding: 0;
         }
 
         .top-bar__logo {
@@ -911,7 +980,7 @@ footer {
 
         .slider-content {
             width: 240px;
-            margin-top: 25px;
+            padding-top: 100px;
         }
 
         .slider-content__item1 {
@@ -984,8 +1053,7 @@ footer {
         /*sekcja zespol*/
         .team {
             background-position: bottom;
-            height: 475px;
-            padding-top: 20px;
+            height: 510px;
         }
 
 
@@ -1000,10 +1068,6 @@ footer {
             font-size: 14px;
         }
 
-        .reference__quotation {
-            margin: 25px 0;
-        }
-
         /* sekcja oferta */
         .tiles__item {
             height: 220px;
@@ -1012,6 +1076,7 @@ footer {
         .tiles__title {
             font-size: 16px;
             margin-top: 40px;
+            line-height: 22px;
         }
     }
 }
@@ -1033,7 +1098,7 @@ footer {
         margin-top: 30px;
     }
 
-    header {
+    .header {
         background: url("../assets/verist.png") no-repeat;
         background-size: cover;
     }
@@ -1047,7 +1112,6 @@ footer {
     .top-bar__logo {
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 20px;
     }
 
     .navigation {
@@ -1068,11 +1132,23 @@ footer {
         text-decoration: none;
         color: rgb(15, 60, 96);
         cursor: pointer;
+        position: relative;
     }
 
-    .navigation__link:hover {
-        border-bottom: 2px rgb(0, 173, 239) solid;
+    .navigation__link::after {
+        display:block;
+        content: '';
+        border-bottom: 2px solid rgb(0, 173, 239);
+        transition: transform 250ms ease-in-out;
+        position: absolute;
         width: 100%;
+        left: 0;
+        transform: scaleX(0);
+        bottom: -3px;
+    }
+
+    .navigation__link:hover::after {
+        transform: scaleX(1);
     }
 
     /* sekcja O nas */
@@ -1111,7 +1187,7 @@ footer {
     /* sekcja zespół */
     .team {
         margin-top: 30px;
-        padding-top: 20px;
+        padding-top: 50px;
         background: url("../assets/team.png") no-repeat center;
         background-size: cover;
         position: relative;
@@ -1130,12 +1206,17 @@ footer {
     .reference__quotation {
         border: 2px rgb(38, 79, 111) solid;
         padding: 25px 50px;
+        margin: 50px 0;
     }
 
     /* sekcja oferta */
     .tiles__item {
         margin: 1%;
         width: 18%;
+    }
+
+    .tiles__title {
+        line-height: 24px;
     }
 
     /* sekcja kontakt*/
@@ -1163,19 +1244,19 @@ footer {
             margin-top: 30px;
         }
 
-        header {
+        .header {
             height: 500px;
             background-position: bottom;
         }
 
-        .top-bar {
-            height: 100px;
+        .top-bar__logo {
+            width: 170px;
+            height: 50px;
+            background-image: url("../assets/logo_mobile_landscape.png");
         }
 
-        .top-bar__logo {
-            width: 23vw;
-            height: 6vh;
-            background-image: url("../assets/logo_mobile_landscape.png");
+        .top-bar--navigation-scroll .top-bar__logo {
+            height: 40px;
         }
 
         .navigation__link {
@@ -1185,7 +1266,7 @@ footer {
 
         .slider-content {
             width: 360px;
-            margin-top: 30px;
+            padding-top: 155px;
         }
 
         .slider-content__item1 {
@@ -1242,7 +1323,7 @@ footer {
 
         /*sekcja zespol*/
         .team {
-            height: 600px;
+            height: 700px;
         }
 
 
@@ -1257,10 +1338,6 @@ footer {
             font-size: 14px;
         }
 
-        .reference__quotation {
-            margin: 30px 0;
-        }
-
         /* sekcja oferta */
         .tiles__item {
             height: 150px;
@@ -1268,6 +1345,12 @@ footer {
 
         .tiles__title {
             font-size: 12px;
+            line-height: 18px;
+            padding: 20px 25px;
+        }
+
+        .tiles__item:after {
+            bottom: 20px;
         }
 
         /* sekcja partnerzy*/
@@ -1298,13 +1381,9 @@ footer {
             font-size: 19px;
         }
 
-        header {
+        .header {
             height: 600px;
             background-position: top;
-        }
-
-        .top-bar {
-            height: 130px;
         }
 
         .top-bar__logo {
@@ -1313,8 +1392,8 @@ footer {
             background-image: url("../assets/logo.png");
         }
 
-        .navigation__list {
-            height: 50px;
+        .top-bar--navigation-scroll .top-bar__logo {
+            height: 40px;
         }
 
         .navigation__link {
@@ -1324,7 +1403,7 @@ footer {
 
         .slider-content {
             width: 415px;
-            margin-top: 35px;
+            padding-top: 180px;
         }
 
         .slider-content__item1 {
@@ -1396,10 +1475,6 @@ footer {
             font-size: 15px;
         }
 
-        .reference__quotation {
-            margin: 35px 0;
-        }
-
         /* sekcja oferta */
         .tiles__item {
             height: 180px;
@@ -1424,13 +1499,9 @@ footer {
             font-size: 21px;
         }
 
-        header {
+        .header {
             height: 800px;
             background-position: center;
-        }
-
-        .top-bar {
-            height: 150px;
         }
 
         .top-bar__logo {
@@ -1439,8 +1510,8 @@ footer {
             background-image: url("../assets/logo.png");
         }
 
-        .navigation__list {
-            height: 50px;
+        .top-bar--navigation-scroll .top-bar__logo {
+            height: 40px;
         }
 
         .navigation__link {
@@ -1451,7 +1522,7 @@ footer {
 
         .slider-content {
             width: 500px;
-            margin-top: 50px;
+            padding-top: 250px;
         }
 
         .slider-content__item1 {
@@ -1517,10 +1588,6 @@ footer {
 
         .reference__author {
             font-size: 16px;
-        }
-
-        .reference__quotation {
-            margin: 37px 0;
         }
 
         /* sekcja oferta */
